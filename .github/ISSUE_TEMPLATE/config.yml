@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/bavithiranhardy14/newman-trigger-control-plane/security/policy
+    about: Please report vulnerabilities using the security policy guidance.
