@@ -1,4 +1,4 @@
-# Contributor Covenant Code of Conduct
+# newman-trigger-control-plane Code of Conduct
 
 ## Our Pledge
 
