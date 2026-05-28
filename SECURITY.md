@@ -1,4 +1,4 @@
-# Security Policy
+# Security Policy for newman-trigger-control-plane
 
 ## Supported Versions
 

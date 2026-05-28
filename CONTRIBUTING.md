@@ -1,4 +1,4 @@
-# Contributing
+# Contributing to newman-trigger-control-plane
 
 Thanks for contributing to this project.
 

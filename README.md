@@ -1,4 +1,6 @@
-# RestFull_Booker_Newman
+# newman-trigger-control-plane
+
+Open-source Newman trigger console for multi-project API test orchestration.
 
 ## Newman Setup
 
