@@ -1,0 +1,33 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - Dockerfile
+      - package.json
+      - package-lock.json
+      - scripts/**
+
+pr: none
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  dockerHubServiceConnection: dockerhub-service-connection
+  dockerHubRepository: your-dockerhub-username/newman-trigger-control-plane
+
+steps:
+  - checkout: self
+
+  - task: Docker@2
+    displayName: Build and push image to Docker Hub
+    inputs:
+      containerRegistry: $(dockerHubServiceConnection)
+      repository: $(dockerHubRepository)
+      command: buildAndPush
+      Dockerfile: Dockerfile
+      tags: |
+        $(Build.BuildId)
+        latest
